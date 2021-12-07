@@ -27,8 +27,6 @@ services:
     container_name: backend
     build: ./lib_catalog
     restart: unless-stopped
-    ports:
-      - 8000:8000
     networks:
       - private
       - public

@@ -1,5 +1,5 @@
 # build image
-FROM node:lts-alpine AS builder
+FROM node:14 AS builder
 WORKDIR /app
 COPY . .
 RUN npm install && npm run build
